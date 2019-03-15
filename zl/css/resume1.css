@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #6f6f6f;
+    line-height: 30px;
+    background-image: url("../image/background.png");
+    background-attachment: fixed;
+}
+.main-right, .main-left {
+    float: left;
+}
+img {
+    width: 21px;
+    vertical-align: text-bottom;
+}
+.main {
+    margin: 40px auto;
+    width: 700px;
+    height: 1200px;
+    background-image: url("../image/background-resume.png");
+}
+.main-right {
+    width: 350px;
+}
+.top {
+    width: 250px;
+    padding: 40px 0px 0px 80px;
+}
+.bottom {
+    padding: 40px 0px 0px 15px;
+}
+.main-left {
+    width: 340px;
+    padding: 110px 0px 0px 10px;
+}
+.main ul li {
+    list-style: none;
+}
+.png1 {
+    width: 31px;
+    vertical-align: text-bottom;
+}
+.font1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008cba;
+    line-height: 40px;
+}
+a:link, a:visited {
+    color: #6f6f6f;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
