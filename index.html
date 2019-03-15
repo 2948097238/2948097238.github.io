@@ -2,64 +2,328 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="image/resume.png" type="image/x-icon" />
-    <link href="css/resume1.css" rel="stylesheet" type="text/css">
-    <title>个人简历</title>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/shop.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="main">
-    <div class="main-right">
-        <div class="top">
-            <img src="image/avatar.png" style="width: 140px">
-        </div>
-        <div class="bottom">
-            <ul>
-                <li class="font1"><img class="png1" src="image/info.png"> 基本信息</li>
-                <li><img src="image/name.png"> 姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：曾利</li>
-                <li><img src="image/age.png"> 出生日期：1999-06-02</li>
-                <li><img src="image/tel.png"> 电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：13297494234</li>
-                <li><img src="image/email.png"> 邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：2948097238@qq.com</li>
-            </ul>
-            <br>
-            <ul>
-                <li class="font1"><img class="png1" src="image/hobby.png"> 个人爱好</li>
-                <li>喜欢听歌，闲时也会看看电影或者书。</li>
-            </ul>
-            <br>
-            <ul>
-                <li class="font1"><img class="png1" src="image/evaluation.png"> 自我评价</li>
-                <li>作为初学者，我具备出色的学习能力并且乐于学习、敢于创新，不断追求卓越;作为参与
-                    者我具备诚实可信的品格、富有团队合作精神,有很强的忍耐力、意志力和吃苦耐劳的品质,对工作认真负责，积极进取,个性乐观执着，敢于
-                    面对困难与挑战。诚实守信，责任心强，注重团队精神。相信我所具有的知识和处事能力完全可以胜任任何困难的工作,环境的艰苦并不能阻 碍完成我要完成的工作。将来投入工作,
-                    我定把我所有的青春和热情倾力投入到我的工作中，取得应有的成绩，为公司的发展壮大贡献自己的 力量，希望您的选择和我的努力会为我们带来双赢的结果！
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="main-left">
-        <ul>
-            <li class="font1"><img class="png1" src="image/education.png"> 教育经历</li>
-            <li>2016.9-2019.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;湖南科技职业学院</li>
-            <li>专业：软件技术（游戏软件开发方向）</li>
-            <li>课程：程序设计基础（C语言）、Flash游戏编程、Unity3D游戏开发、3DMax</li>
+<div class="top">
+    <div class="top_text clear">
+        <ul class="top_left">
+            <li class="top_log"><img src="images/top_log.jpg" style="width: 190px;vertical-align: text-bottom"></li>
+            <li><img src="images/top_map.jpg" style="width: 11px;" align="absmiddle">&nbsp;&nbsp;</li>
+            <li>北京</li>
         </ul>
-        <br>
-        <ul>
-            <li class="font1"><img class="png1" src="image/skill.png"> 专业技能</li>
-            <li>掌握技能：精通Html、Css、JavaScript，熟练使用BootStrap和JQuery</li>
-            <li>熟练软件：PhpStorm、SQLyog、PhotoShop等开发工具</li>
-        </ul>
-        <br>
-        <ul>
-            <li class="font1"><img class="png1" src="image/job.png"> 求职意向</li>
-            <li> Web前端开发</li>
-        </ul>
-        <br>
-        <ul>
-            <li class="font1"><img class="png1" src="image/project.png"> 项目经历</li>
-            <li><a href="jd/index.html">京东静态页面</a></li>
+        <ul class="top_right">
+            <li><a href="#" class="top_noneBorder">你好，请登录</a><a href="#" class="color">免费注册</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li class="but1"><a href="#">我的京东</a>
+                <div class="but1_text">
+                    <div>
+                        <ul>
+                            <li><a href="#">待处理订单</a></li>
+                            <li><a href="#">返修退换货</a></li>
+                            <li><a href="#">降价商品</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">消息</a></li>
+                            <li><a href="#">我的问答</a></li>
+                            <li><a href="#">我的关注</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div>
+                        <ul>
+                            <li><a href="#">我的京豆</a></li>
+                            <li><a href="#">我的白条</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">我的优惠卷</a></li>
+                            <li><a href="#">我的理财</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">京东会员</a></li>
+            <li class="but2"><a href="#">企业采购</a>
+                <div class="but2_text">
+                    <ul>
+                        <li><a href="#">企业购</a></li>
+                        <li><a href="#">商业场景馆</a></li>
+                        <li><a href="#">工业品</a></li>
+                        <li><a href="#">礼品卡</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="but3"><a href="#" class="acolor">客户服务</a>
+                <div class="but3_text">
+                    <div class="divwidth"><b>客户</b></div>
+                    <div>
+                        <ul>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">在线客服</a></li>
+                            <li><a href="#">电话客服</a></li>
+                            <li><a href="#">金融咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="divmargin">
+                        <ul>
+                            <li><a href="#">售后服务</a></li>
+                            <li><a href="#">意见建议</a></li>
+                            <li><a href="#">客服邮箱</a></li>
+                            <li><a href="#">全球售客服</a></li>
+                        </ul>
+                    </div>
+                    <div class="divwidth"><b>商户</b></div>
+                    <div>
+                        <ul>
+                            <li><a href="#">合作招商</a></li>
+                            <li><a href="#">商家后台</a></li>
+                            <li><a href="#">商家帮助</a></li>
+                        </ul>
+                    </div>
+                    <div class="divmargin">
+                        <ul>
+                            <li><a href="#">学习中心</a></li>
+                            <li><a href="#">京麦工作台</a></li>
+                            <li><a href="#">规则平台</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="acolor">网站导航</a></li>
+            <li><a href="#" class="top_noneBorder">手机京东</a></li>
         </ul>
     </div>
 </div>
+<div class="clear"></div>
+<div class="heard">
+    <div class="heard_log">
+        <img src="images/log.jpg" style="width: 190px">
+    </div>
+    <div class="heard_search">
+        <div class="heard_search_s clear">
+            <div class="search clear">
+                <input class="search_t" type="text" value="飞利浦"> <input class="search_s" type="button" value="">
+            </div>
+            <div class="heard_search_shop">
+                <div>
+                    <img src="images/shop.jpg" style="width: 16px"> <a href="#" class="color">我的购物车</a>
+                </div>
+                <div class="shop_1">
+                    <img src="images/shopping.jpg" style="width: 54px" align="absmiddle">购物车中还没有商品，赶紧选购吧！
+                </div>
+            </div>
+            <div class="text clear">
+                <div class="text_mar">
+                    <ul>
+                        <li><a href="#" class="color">买运动户外</a></li>
+                    </ul>
+                </div>
+                <div class="massg">
+                    <ul>
+                        <li><a href="#">健康女神</a></li>
+                        <li><a href="#">坚果糖巧</a></li>
+                        <li><a href="#">200减100</a></li>
+                        <li><a href="#">299减150</a></li>
+                        <li><a href="#">沙发9.9</a></li>
+                        <li><a href="#">华为电脑</a></li>
+                        <li><a href="#">家居礼品</a></li>
+                        <li><a href="#">手机平板</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="heard_search_t clear">
+            <ul>
+                <li><a href="">秒杀</a></li>
+                <li><a href="">优惠券</a></li>
+                <li><a href="">PLUS会员</a></li>
+                <li><a href="" class="aborder">闪购</a></li>
+                <li><a href="">拍卖</a></li>
+                <li><a href="">京东时尚</a></li>
+                <li><a href="">京东超市</a></li>
+                <li><a href="" class="aborder">京东生鲜</a></li>
+                <li><a href="">海囤全球</a></li>
+                <li><a href="">京东金融</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="menu1">
+        <ul>
+            <li><a href="#">家用电器</a></li>
+            <li><a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a></li>
+            <li><a href="#">电脑</a>/<a href="#">办公</a></li>
+            <li><a href="#">家居</a>/<a href="#">家具</a>/<a href="#">家装</a>/<a href="#">厨具</a></li>
+            <li><a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a></li>
+            <li><a href="#">美妆</a>/<a href="#">个护清洁</a>/<a href="#">宠物</a></li>
+            <li><a href="#">女鞋</a>/<a href="#">箱包</a>/<a href="#">钟表</a>/<a href="#">珠宝</a></li>
+            <li><a href="#">男鞋</a>/<a href="#">运动</a>/<a href="#">户外</a></li>
+            <li><a href="#">房产</a>/<a href="#">汽车</a>/<a href="#">汽车用品</a></li>
+            <li><a href="#">母婴</a>/<a href="#">玩具乐器</a></li>
+            <li><a href="#">食品</a>/<a href="#">酒类</a>/<a href="#">生鲜</a>/<a href="#">特产</a></li>
+            <li><a href="#">艺术</a>/<a href="#">礼品鲜花</a>/<a href="#">农资绿植</a></li>
+            <li><a href="#">医药保健</a>/<a href="#">计生情趣</a></li>
+            <li><a href="#">图书</a>/<a href="#">文娱</a>/<a href="#">电子书</a></li>
+            <li><a href="#">机票</a>/<a href="#">酒店</a>/<a href="#">旅游</a>/<a href="#">生活</a></li>
+            <li><a href="#">理财</a>/<a href="#">众筹</a>/<a href="#">白条</a>/<a href="#">保险</a></li>
+            <li><a href="#">安装</a>/<a href="#">维修</a>/<a href="#">清洗保养</a></li>
+            <li><a href="#">工业品</a></li>
+        </ul>
+    </div>
+    <div class="menu2">
+        <div class="menu2_img1" onmouseover="stop_img()" onmouseout="start_i()">
+            <img id="img" src="images/img1.jpg">
+            <div id="but_01" class="but_01" onclick="but_left(this)"><img src="images/left.png" style="width: 18px">
+            </div>
+            <div id="but_02" class="but_02" onclick="but_right(this)"><img src="images/right.png" style="width: 18px">
+            </div>
+            <div id="button" class="button">
+                <div id="but_1" onmouseover="but_stop(1,this)"></div>
+                <div id="but_2" onmouseover="but_stop(2,this)"></div>
+                <div id="but_3" onmouseover="but_stop(3,this)"></div>
+                <div id="but_4" onmouseover="but_stop(4,this)"></div>
+                <div id="but_5" onmouseover="but_stop(5,this)"></div>
+                <div id="but_6" onmouseover="but_stop(6,this)"></div>
+                <div id="but_7" onmouseover="but_stop(7,this)"></div>
+                <div id="but_8" onmouseover="but_stop(8,this)"></div>
+            </div>
+        </div>
+        <div class="menu2_img2">
+            <div><img src="images/shop1.jpg"></div>
+            <div><img src="images/shop2.jpg"></div>
+            <div><img src="images/shop3.jpg"></div>
+        </div>
+        <div class="menu2_img3">
+            <div class="login_img"><img src="images/no_login.jpg"></div>
+            <div class="login">
+                <span>Hi~欢迎来到京东！</span><br> <a href="#">登录</a> <a href="#">注册</a>
+            </div>
+            <div class="newpeople clear">
+                <div class="newpeople1">新人福利</div>
+                <div class="newpeople2">PLUS会员</div>
+            </div>
+            <div class="news">
+                <div class="news1"><span class="span1"><b>京东快报</b></span><span class="span2"><a href="#">更多</a></span>
+                </div>
+                <div class="clear"></div>
+                <div class="news2">
+                    <ul>
+                        <li><a href="#" class="text"><span class="span3">公告</span>
+                            <div>华北区张家口大件运营中心开仓公告</div>
+                        </a></li>
+                        <li><a href="#" class="text"><span class="span4">活动</span>
+                            <div>优选好货</div>
+                        </a></li>
+                        <li><a href="#" class="text"><span class="span5">热门</span>
+                            <div>C1驾照即将升级，大批车主或将受益，没考驾照的墙角哭晕</div>
+                        </a></li>
+                        <li><a href="#" class="text"><span class="span6">推荐</span>
+                            <div>又要和一手机系统说再</div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="right_Max_mune">
+                <ul>
+                    <li class="icon1" onmouseover="show_menu(1)"><a href="#">
+                        <div></div>
+                        话费</a></li>
+                    <li class="icon2" onmouseover="show_menu(2)"><a href="#">
+                        <div></div>
+                        机票</a></li>
+                    <li class="icon3" onmouseover="show_menu(3)"><a href="#">
+                        <div><img src="images/icon/jian.png"></div>
+                        酒店</a></li>
+                    <li class="icon4" onmouseover="show_menu(4)"><a href="#">
+                        <div></div>
+                        游戏</a></li>
+                    <li class="icon5"><a href="#">
+                        <div></div>
+                        企业购</a></li>
+                    <li class="icon6"><a href="#">
+                        <div></div>
+                        加油卡</a></li>
+                    <li class="icon7"><a href="#">
+                        <div><img src="images/icon/you.png"></div>
+                        电影票</a></li>
+                    <li class="icon8"><a href="#">
+                        <div></div>
+                        火车票</a></li>
+                    <li class="icon9"><a href="#">
+                        <div></div>
+                        众筹</a></li>
+                    <li class="icon10"><a href="#">
+                        <div></div>
+                        理财</a></li>
+                    <li class="icon11"><a href="#">
+                        <div></div>
+                        礼品卡</a></li>
+                    <li class="icon12"><a href="#">
+                        <div></div>
+                        白条</a></li>
+                </ul>
+            </div>
+            <div id="right_Min_mune">
+                <div id="mune01" class="right_Min_mune">
+                    <ul>
+                        <li id="mune1" onclick="show_text(1,this)">话费</li>
+                        <li id="mune2" onclick="show_text(2,this)">机票</li>
+                        <li id="mune3" onclick="show_text(4,this)">酒店</li>
+                        <li id="mune4" onclick="show_text(5,this)">游戏</li>
+                    </ul>
+                    <div class="del" onclick="none()"><img src="images/icon/c.png"></div>
+                </div>
+                <div id="right_Min_text" class="right_Min_text">
+                    <div id="text1">
+                        <ul>
+                            <li>话费充值</li>
+                            <li>流量充值</li>
+                            <li>套餐变更</li>
+                        </ul>
+                    </div>
+                    <div id="text2">
+                        <ul>
+                            <li>国内机票</li>
+                            <li>国际/港澳台</li>
+                            <li>特惠</li>
+                        </ul>
+                    </div>
+                    <div id="text3">
+                        <ul>
+                            <li>国内港澳台</li>
+                            <li>促销活动</li>
+                        </ul>
+                    </div>
+                    <div id="text4">
+                        <ul>
+                            <li>视频/娱乐</li>
+                            <li>点卡</li>
+                            <li>QQ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class=""></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="div6"></div>
+</div>
+<div class="clear"></div>
 </body>
 </html>
