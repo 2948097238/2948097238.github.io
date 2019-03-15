@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://F:/xampp/htdocs/190315/.idea/190315.iml" filepath="F:/xampp/htdocs/190315/.idea/190315.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Resume.iml" filepath="$PROJECT_DIR$/.idea/Resume.iml" />
     </modules>
   </component>

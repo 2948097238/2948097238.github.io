@@ -59,16 +59,24 @@ function start_i() {
 //右侧菜单显示
 function show_menu(n) {
     $("#right_Min_mune").css({display: "block"});
-    $("#text"+n+"").css({display: "block"});
-    $("#mune01>li").css({border:"none"});
+    $("#text" + n + "").css({display: "block"});
+    $("#mune01>li").css({border: "none"});
     //$("#mune" + n + "").css({borderBottom: "2px solid red"});
 }
-function show_text(s,t) {
-    $("#mune01>li").css({border:"none"});
+function show_text(s, t) {
+    $("#mune01>li").css({border: "none"});
     $("#right_Min_text>div").css({display: "none"});
-    $("#text"+s+"").css({display:"block"});
+    $("#text" + s + "").css({display: "block"});
     //t.style.borderBottom="2px solid red";
 }
 function none() {
     $("#right_Min_mune").css({display: "none"});
 }
+var vm = new Vue({
+    el:"#img",
+    data:{
+
+    },
+    method:{}
+
+});
